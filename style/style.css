@@ -1,0 +1,36 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	background: url("../images/background-picture.jpg") no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.custom-container {
+	max-width: 1366px;
+	margin: auto;
+	padding: 0 50px;
+}
+.matte-glass {
+	width: 60%;
+	height: 350px;
+	margin: 0 auto;
+	box-shadow: inset 0 0 0 200px rgba(255,255,255,0.4);
+}
+.input-form {
+	width: 80%;
+	margin: 50px auto;
+}
+.confirm-button {
+	width: 100%;
+	height: 50px;
+	border: none;
+	background-color: #024b02;
+	color: #fff;
+	font-size: 17px;
+}
+.confirm-button:hover {
+	background-color: #337c10;
+}
