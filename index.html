@@ -3,18 +3,32 @@
 <head>
 	<title>Weather</title>
 	<link rel="stylesheet" href="style/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<div class="custom-container">
 		<div class="matte-glass">
 			<form method="get" class="input-form">
-				<label for="city-search">City Name</label>
-				<input type="text" id="city-search" placeholder="e.g. Rochester, NY">
-				<button class="confirm-button">Get Weather</button>
+				<ul class="list-reset">
+					<li>
+						<label for="latitude">Latitude</label>
+						<input type="text" id="latitude" placeholder="e.g. 49.8382600" required>
+					</li>
+					<li>
+						<label for="longitude">Longitude</label>
+						<input type="text" id="longitude" placeholder="e.g. 24.0232400" required>
+					</li>
+					<li>
+						<label for="city-search">City Name</label>
+						<input type="text" id="city-search" placeholder="e.g. Rochester, NY">
+					</li>
+					<button class="confirm-button">Get Weather</button>
+				</ul>
 			</form>
 		</div>
 	</div>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDR0ph47TF1ya5xaVCbE083Squ7Zk1iL-0&libraries=places,geometry"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 	<script type="text/javascript" src="script/script.js"></script>
 </body>
 </html>
